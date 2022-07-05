@@ -84,9 +84,9 @@ require_once 'conn.php';
       </tr>
     </thead>
     <tbody>
-	<?php foreach($arrs as $a) { ?>
+	<?php $id=0; foreach($arrs as $a) { $id++; ?>
       <tr>
-        <td><?php echo $a['id']?></td>
+        <td><?= $id ?></td>
         <td><?php echo $a['name']?></td>
         <td><?php echo $a['description']?></td>
         <td><?php echo $a['salary']?></td>
